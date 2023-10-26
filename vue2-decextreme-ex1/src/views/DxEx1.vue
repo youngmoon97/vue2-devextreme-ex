@@ -1,7 +1,10 @@
 <template>
   <v-container>
     <DxAccordion />
-    <hr />
+    <v-row class="ma-4 pa-4">
+      <v-col cols="12"> <hr /></v-col>
+    </v-row>
+
     <DxDataGrid />
   </v-container>
 </template>
@@ -16,6 +19,11 @@ export default {
   components: {
     DxAccordion,
     DxDataGrid,
+  },
+  data: () => {
+    return {
+      pageNum: 1,
+    };
   },
 };
 </script>
